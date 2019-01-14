@@ -233,8 +233,8 @@ with nogil:
 ---
 ### asyncio libs
 
-- https://github.com/aio-libs
-- https://github.com/timofurrer/awesome-asyncio
+- [https://github.com/aio-libs]
+- [https://github.com/timofurrer/awesome-asyncio]
 
 - aioconsole
 - asyncpg / aiopg
