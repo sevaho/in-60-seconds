@@ -1,6 +1,6 @@
-# Overview
+## Overview
 
-## do more at once vs do things faster:
+- do more at once vs do things faster:
 
 | horizontal | vertical |
 | ---------       | ---------        |
@@ -8,9 +8,9 @@
 | threads         | cython           |
 
 ---
-# Generator
+## Generator
 
-## a function containing yield
+- a function containing yield
 
 ```python
 def fib():
@@ -27,7 +27,7 @@ for i in fib():
 ```
 
 ---
-# give me some code
+## give me some code
 
 ```python
 import asyncio
@@ -41,7 +41,7 @@ loop.run_until_complete(tasks)
 ```
 
 ---
-# Debug async code
+## Debug async code
 
 - Setting the PYTHONASYNCIODEBUG environment variable to 1.
 - Using the -X dev Python command line option.
@@ -50,14 +50,11 @@ loop.run_until_complete(tasks)
 
 
 ---
-# using aiohttp
+## using aiohttp
 
-## async variant of requests
-
+- async variant of requests
 - You may want to install optional cchardet library as faster replacement for chardet:
 - For speeding up DNS resolving by client API you may install aiodns as well. This option is highly recommended:
-
-## 
 
 ```shell
 $ pip install cchardet
@@ -65,7 +62,7 @@ $ pip install aiodns
 ```
 
 ---
-# using aiohttp
+## using aiohttp
 
 simple usecase:
 
@@ -88,7 +85,7 @@ await session.close()
 ```
 
 ---
-# using aiohttp
+## using aiohttp
 
 Basic API is good for performing simple HTTP requests without keepaliving, cookies and complex connection stuff like properly configured SSL certification chaining
 
@@ -109,7 +106,7 @@ GIL makes python the way it is, thanks to the GIL python is fast (single threade
 
 
 ---
-# webscraping demo
+### webscraping demo
 
 ```python
 import asyncio
