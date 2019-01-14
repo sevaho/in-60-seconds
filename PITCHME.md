@@ -154,7 +154,7 @@ while any([t.is_alive() for t in threads)]:
 ```
 
 ---
-# RLock
+### RLock
 
 best: (if code fails you should be able to release lock)
 
@@ -164,7 +164,7 @@ with transfer_lock:
 ```
 
 ---
-# multiprocessing
+### multiprocessing
 
 ```python
 from multiprocessing.pool import Pool
@@ -183,7 +183,7 @@ for t in tasks:
 ```
 
 ---
-# multiprocessing and asyncio api
+### multiprocessing and asyncio api
 
 SAME API FOR MULTIPROCESSES AND THREADS!
 
@@ -204,13 +204,13 @@ for t in tasks:
 ```
 
 ---
-# unsync
+### unsync
 
 combines the power of multiprocces, threads and async
 @unsync(cpu_bound=True)
 
 ---
-# Cython
+### Cython
 
 file <file>.pyx
 
@@ -228,9 +228,10 @@ python setup.py build_ext --inplace
 one can use a 
 ```
 with nogil:
+```
 
 ---
-# asyncio libs
+### asyncio libs
 
 - https://github.com/aio-libs
 - https://github.com/timofurrer/awesome-asyncio
