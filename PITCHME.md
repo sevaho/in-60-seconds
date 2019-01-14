@@ -215,10 +215,8 @@ SAME API FOR MULTIPROCESSES AND THREADS!
 
 ```python
 from concurrent.futures import Future
-from concurrent.futures.thread \
-import ThreadPoolExecutor as PoolExecutor
-# from concurrent.futures.thread \
-import ProcessPoolExecutor as PoolExecutor
+from concurrent.futures.thread import ThreadPoolExecutor as PoolExecutor
+# from concurrent.futures.thread import ProcessPoolExecutor as PoolExecutor
 
 tasks = []
 with PoolExecutor() as executor:
@@ -230,12 +228,7 @@ for t in tasks:
 ```
 
 ---
-### unsync
 
-combines the power of multiprocces, threads and async
-@unsync(cpu_bound=True)
-
----
 ### Cython
 
 file <file>.pyx
@@ -259,9 +252,8 @@ with nogil:
 ---
 ### asyncio libs
 
-- [https://github.com/aio-libs]
-- [https://github.com/timofurrer/awesome-asyncio]
-
+- github.com/aio-libs
+- github.com/timofurrer/awesome-asyncio
 - aioconsole
 - asyncpg / aiopg
 - aiofiles
