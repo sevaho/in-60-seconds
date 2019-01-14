@@ -8,6 +8,18 @@
 | threads         | cython           |
 
 ---
+## Iterators
+
+```python
+a = iter(list(range(10)))
+
+while True:
+    input()
+    print(next(a))
+```
+
+---
+
 ## Generator
 
 - a function containing yield
@@ -24,6 +36,22 @@ for i in fib():
     if i > 10000:
         print(i, flush=True)
         exit(1)
+```
+
+---
+## coroutine
+
+- a function where yield is on the right of the **=** sign.
+
+```python
+def coro():
+    hello = yield "Hello"
+    yield hello
+ 
+ 
+c = coro()
+print(next(c))
+print(c.send("World"))
 ```
 
 ---
