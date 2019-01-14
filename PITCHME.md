@@ -4,7 +4,14 @@
 
 ## Add Some Slide Candy
 
-![](assets/img/presentation.png)
+```python
+import asyncio
+
+async def main():
+  return True
+  
+ asyncio.run(main())
+```
 
 ---
 @title[Customize Slide Layout]
