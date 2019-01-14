@@ -158,8 +158,6 @@ async def parse_html():
 ---
 ### threads
 
-> Note: daemon = True ()
-
 ```python
 threads = [
     Thread(target=<func>, args=(), daemon=True), 
