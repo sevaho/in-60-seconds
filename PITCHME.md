@@ -95,15 +95,11 @@ from aiohttp import request
 async with request("GET", url) as response:
 ```
 
-
-asyncio 3.5 async await
-
-do them easier with trio and unsync
-
+---
+## GIL
 
 threads dont add computational speed because of GIL
 GIL makes python the way it is, thanks to the GIL python is fast (single threaded), you dont need to MM
-
 
 ---
 ### webscraping demo
@@ -132,7 +128,7 @@ async def parse_html():
 ```
 
 ---
-# threads
+### threads
 
 > Note: daemon = True ()
 
